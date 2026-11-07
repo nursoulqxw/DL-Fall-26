@@ -1,0 +1,8 @@
+{
+  "chosen": "fix_b",
+  "operations": "ImageOps.autocontrast, point(lambda p: 255 if p > 160 else 0)",
+  "ocr": "tesseract --oem 1 --psm 7, lang eng",
+  "normalization": "uppercase, remove whitespace",
+  "reason": "fix_b achieved the lowest validation CER (0.415) and the highest exact match (54%), compared with fix_a (0.441, 50%) and baseline (0.457, 50%).",
+  "frozen_at": "2026-11-07T04:47:26"
+}
